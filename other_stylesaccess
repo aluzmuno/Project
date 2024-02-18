@@ -1,0 +1,54 @@
+h1 {
+    color: darkorange;
+    font-size: 2.8em;
+    font-weight: bold;
+    text-align: center;
+}
+#border {
+    border-style: solid;
+}
+#banner {
+    border-top: solid;
+    border-bottom: solid;
+    background-color: blue;
+}
+nav{
+    clear:left; /*doesn't allow anything next to it*/
+    padding:2em;
+    margin-left: 5em;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 0.5em;
+}
+
+nav ul li a {
+    padding: 0.25em 1em;
+    text-decoration: none; /* no underline */
+    background-color: #EBF5FF; /* pale bluish white */
+    color: #4312AE; /* dark blue */
+    border: 2px solid black;
+    border-top-left-radius: 1em 1em; /* rounded corner! */
+    border-top-right-radius: 1em 1em; /* another rounded corner! */
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+table {
+    margin: 30%;
+    margin-bottom: 10%;
+}
+caption {
+    font-size: 3em;
+}
+
+td, th {
+    border-style: solid;
+    padding: .5em;
+    padding-right:5em;
+}

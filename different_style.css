@@ -1,0 +1,85 @@
+h1 {
+    color: gray;
+    font-size: 4em;  /*This changes the colors of the header*/
+    font-weight: bold;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none; /*This takes away the bullet points of the lists*/
+}
+a {
+    color:red; /*This changes all the colors of the links*/
+}
+body {
+    font-size: 1em;
+    font-weight: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    text-align:left;
+    margin-left: 100%;   /*This changes all the words that are not links */
+    margin-right: 100%;    /*Everything that's part of the body*/
+    width:1000px;
+    margin: 0 auto;
+}
+#border {
+    border-style: solid; /* outside is solid*/
+    padding-bottom: 15em;
+}
+#banner {
+    border-top: solid;
+    border-bottom: dashed; /* inside is dashed*/
+    background-color: lightblue;
+}
+nav{
+    clear:left;
+    padding: 2em; /*increases the size of the inside*/
+    margin-left: 5em; /*Moves the inside e.g. home */
+}
+
+nav ul li { /*also reduces the size of the top part*/
+    float: left; /*Moves the inside to the right*/
+    margin-right: 5em;
+}
+nav ul li a { /* changes the 'taps'*/
+    padding: 0.25em 2em;
+    text-decoration: none; /* no underline */
+    background-color: #EBF5FF; /* pale bluish white */
+    color: #4312AE; /* dark blue */
+    border: 2.5px dashed black;
+    border-top-left-radius: 5em 3em; /* rounded corner! */
+    border-top-right-radius: 5em 3em; /* another rounded corner! */
+}
+nav ul li a:hover {
+    color: black;
+    background-color: violet;
+    font-weight: bold;
+}
+p {
+    text-align: start; /*align text that's at the bottom of the page*/
+     
+}
+table {
+    margin: 8%;     /*To position the table*/
+    margin-bottom: 10%;   
+}
+caption {
+    font-size: 2.5em;
+}
+th, td {
+    text-align: start;
+    border-style: solid;
+    padding: .4em;
+    padding-right:3em;
+}
+/*javascript css */
+li.jsList {
+    margin: 5%;
+  }
+  button.jsFun {  
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+

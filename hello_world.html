@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello React!</title>
+    <!-- import React libraries -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>    
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  </head>
+  </head>
+  <body>
+    <div id = "root"></div>
+    <script type="text/babel">
+    //var name = "Boomer";
+    function formantName(obj) {
+      if(obj.pet_type == "dog") {
+        return obj.name + " woof!";
+      } else {
+        return obj.name + " meow!";
+      }
+    }
+    const petObj = {
+      name: "Boomer",
+      pet_type: "dog"
+    };
+
+    const imageElement = <img src="like.png"></img>;
+    //const element = <h1>Hello{petObj.name ", my "+petObject/pet_type} !</h1>;
+    const element = <h1>Hello {formantName(petObj)}</h1>;
+    const likes = <div><img src="like.png"></img><p>Likes: 1</p></div>
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    //root.render(element);
+    //root.render(imageElement); //Only render once 
+    //Otherwise if we call render element then image element
+    //it's just going to rerender, erare our previous rendering call 
+    //wth th elikes rendering.
+    root.render(likes);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+h1 {
+    color: darkorange;
+    font-size: 2.8em;
+    font-weight: bold;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: blueviolet;
+}
+body {
+    font-size: 1em;
+    font-weight: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    text-align:left;
+    margin-left: 10%;
+    margin-right: 10%;
+    width:1000px;
+    margin: 0 auto;
+}
+
+#border {
+    border-style: solid;
+}
+#banner {
+    border-top: solid;
+    border-bottom: solid;
+    background-color: blue;
+}
+nav{
+    clear:left; /*doesn't allow anything next to it*/
+    padding:2em;
+    margin-left: 5em;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 0.5em;
+}
+
+nav ul li a {
+    padding: 0.25em 1em;
+    text-decoration: none; /* no underline */
+    background-color: #EBF5FF; /* pale bluish white */
+    color: #4312AE; /* dark blue */
+    border: 2px solid black;
+    border-top-left-radius: 1em 1em; /* rounded corner! */
+    border-top-right-radius: 1em 1em; /* another rounded corner! */
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+
+table {
+    margin: 4%;
+    margin-bottom: 10%;
+}
+caption {
+    font-size: 2em;
+}
+
+th, td {
+    text-align: start;
+    border-style: solid;
+    padding: .8em;
+    padding-right:3em;
+}
+/*javascript css */
+li.jsList {
+    margin: 5%;
+  }
+  button.jsFun {  
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  /*jsDom.html css */
+  table#bankTable {  
+    margin: 0 auto;
+  }
+  table#bankTable caption {
+    font-size: 1.5em;
+  }
+  h2#jsDom {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  button.bankAction {
+    margin-left: 35%;
+    margin-top:2%;
+  }
+  /*javascript css */
+li.jsList {
+    margin: 5%;
+  }
+  button.jsFun {  
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  /*jsDom.html css */
+  table#bankTable {  
+    margin: 0 auto;
+  }
+  table#bankTable caption {
+    font-size: 1.5em;
+  }
+  h2#jsDom {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  button.bankAction {
+    margin-left: 35%;
+    margin-top:2%;
+  }

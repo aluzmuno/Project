@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello React!</title>
+    <!-- import React libraries -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>    
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  </head>
+  </head>
+  <body>
+    <div id="root"></div>
+  <script type="text/babel">
+
+
+    function Welcome(props){
+        return <h1>Hello {props.pet.name} you are {props.pet.age} years old</h1>
+        //, Hello {props.name} you are {props.age} years old
+        //you have to say props.pet.name because we defined pet at the rendering fuction.
+    }
+
+    //we can create another component that includes the welcome component
+    function App(){
+      return (
+        <div>
+          <Welcome name= "Boomer" />
+          <Welcome name= "Charlie" />
+          <Welcome name= "Rocky" />
+          </div>
+      )
+    }
+    function Ghost(props){
+      return <h1>boo</h1>;
+
+    }
+    const obj = {
+      name: "Boomer",
+      age: "7"
+    };
+
+    const myCustomElement = <Welcome name="Boomer" age = "7"/>
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    //root.render(myCustomElement); //can also do the following line
+    //root.render(<Ghost />); //if we don't define fuction ghost an error is gonna pop up
+    //root.render(<Welcome name= "Boomer" age="7"/>); 
+    // the previous, is going to call function welcome and create a props
+
+    //we can also just render the element itself w/out assign it to a variable
+    root.render(< Welcome pet = {obj} />); //we're sending the objct
+    //root.render(<App />);
+    //it was name now it's pet. attribute pet
+    </script>    
+  </body>
+</html>

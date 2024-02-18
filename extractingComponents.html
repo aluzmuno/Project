@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello React!</title>
+    <!-- import React libraries -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>    
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  </head>
+  </head>
+  <body>
+    <div id="root"></div>    
+    <script type="text/babel">   
+       
+  /* The Comment component consists of the author's avatar, name, comment, and date of comment  */
+  /*
+  function Comment(props) {
+    return (    
+    <div>
+        <img
+          src={props.author.avatarUrl} //
+          alt={props.author.name} //alt diplay the authors name
+        />
+        <div>
+          {props.author.name}
+        </div>
+      <div>
+        {props.text}
+      </div>
+      <div>
+        {props.date}
+    </div>
+    </div>
+    );
+  }
+  */
+
+//component avatar just dsplays the  avatar
+  function Avatar(props){
+    return (
+    <div>
+      <img
+        src = {props.user.avatarUrl}
+        alt={props.user.name}
+      />
+    </div>
+    );
+  }
+  //another component avatar. attribute user. sent props.user
+  //
+  function UserInfo(props){
+    return (
+      <div>
+        <Avatar user = {props.user}/>
+        {props.user.name}
+      </div>
+    );
+  }
+//store user props.author
+//attribute on UserInfo is user
+  function Comment(props){
+    return (
+      <div>
+        <UserInfo user = {props.author} /> 
+        <div>
+        {props.text}
+        </div>
+        <div>
+        {props.date}
+        </div>
+        </div>
+    );
+  }
+
+
+//create an avaar component. fuction avarat. take props. return image.
+//cretae a unser info componenr. fuction info. have avatar. plus autheors name.
+// pass props   . Include user info plus the gtext plus date. render comment.
+//fuction comment change.
+  var authorObj = {name: "Robo",
+              avatarUrl:"https://gravatar.com/avatar/748506960d38cfe99fbe6819b55b916e?s=200&d=robohash&r=x"
+  }
+              
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      //root.render(myUserDefinedElement);  
+      //we can also just render the element itself without assign it to a variable
+      //we props.text. can only call props.text cannot overwrite.. props.date
+      //authorObj == props.author
+      root.render(<Comment author ={authorObj} text="beep bop boop" date={new Date().toLocaleTimeString()}/>);
+    </script>
+  </body>
+</html>
